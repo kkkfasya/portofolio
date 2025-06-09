@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Distressed&display=swap');
-
 /* @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"); */
 
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+@import "@fontsource/rubik-distressed";
+@import "@fontsource/rubik-dirt";
+@import "@fontsource/metal-mania";
 
+body {
+	background-color: #0c0c0c;
+	display: flex;
+}
 
-@theme {
-	--font-hard: "Rubik Dirt", system-ui;
-	--font-stress: "Rubik Distressed", system-ui;
+.font-hard {
+	font-family: "Rubik Dirt", system-ui;
+}
+
+.font-stress {
+	font-family: "Rubik Distressed", system-ui;
 }
 
 .paper-overlay {
